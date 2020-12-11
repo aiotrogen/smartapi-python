@@ -5,9 +5,9 @@ from smartapi import SmartConnect
 #or
 #from smartapi import smartExceptions
 
-smartApi =SmartConnect(api_key="Your Api Key")
+smartApi =SmartConnect(api_key="9MsNuOkg")
 
-login = smartApi.generateSession('Your Client Id', 'Your Password')
+login = smartApi.generateSession('aiotrogen@gmail.com', 'Abcd#1234')
 print(login)
 refreshToken = login['data']['refreshToken']
 feedToken = smartApi.getfeedToken()

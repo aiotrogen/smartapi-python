@@ -1,10 +1,12 @@
 # package import statement
 from smartapi.smartConnect import SmartConnect #from smartapi import SmartConnect
 
-obj=SmartConnect()
+# obj=SmartConnect()
+obj=SmartConnect(api_key="9MsNuOkg")
+
 #login api call
 
-data = obj.generateSession('Your Client Id','Password')
+data = obj.generateSession('aiotrogen@gmail.com','Abcd#1234')
 refreshToken= data['data']['refreshToken']
 
 #fetch User Profile
